@@ -35,10 +35,10 @@ app.post("/form", (req, res) => {
   mailgun.messages().send(data, (error, body) => {
     if (error) {
       // s'il n'y a pas eu d'erreur lors de l'envoi du mail, on envoie la réponse suivante au frontend :
-      res.json({ message: "Données du form bien recues, mail envoyé" });
+      res.json({ message: "Erreur" });
       // } else {
       //   // s'il y a eu une erreur lors de l'envoi du mail, on envoie la réponse suivante au frontend :
-
+      alert("Votre message a bien été envoyé, merci !");
       //   res.json(error);
     }
     console.log(body);
