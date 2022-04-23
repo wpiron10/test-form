@@ -16,5 +16,6 @@ $.addEventListener("DOMContentLoaded", () => {
 
     const response = await axios.post("http://localhost:3000/form", data);
     console.log(response.data);
+    alert("Votre message a bien été envoyé, merci ! ");
   });
 });
