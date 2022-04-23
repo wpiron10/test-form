@@ -38,9 +38,10 @@ app.post("/form", (req, res) => {
       res.json({ message: "Erreur" });
       // } else {
       //   // s'il y a eu une erreur lors de l'envoi du mail, on envoie la réponse suivante au frontend :
-      alert("Votre message a bien été envoyé, merci !");
+
       //   res.json(error);
     }
+    alert("Votre message a bien été envoyé, merci !");
     console.log(body);
   });
 });
